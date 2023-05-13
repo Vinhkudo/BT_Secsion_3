@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập 03</title>
+</head>
+<body>
+    <script>
+        let n = +prompt("Nhập vào giá trị của n là số nguyên dương:");
+        let C = 0;
+        if(n%1==0 && n>0){
+            for(let i=1;i<=n;i++){
+                C = C + (1/i);
+            }
+            alert(`C = 1 + ½ + ⅓ + … + 1/${n} = ${C}`)
+        }else{
+            alert("Nhập lại giá trị của n.")
+        }
+    </script>
+</body>
+</html>
